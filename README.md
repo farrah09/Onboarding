@@ -40,6 +40,14 @@ Your App Name is built using cutting-edge technologies, incorporating Jetpack Co
 6. **NewPinScreen() to ConfirmPinScreen()**: Insert pin on NewPinScreen(), pass pin as navigation parameter, and proceed after confirming on ConfirmPinScreen().
 7. **MainScreen() and Sign Out**: Clear previous backstackEntry, set `shouldShowOnboarding` to false, display user information, and sign out functionality.
 
+## Video Reference
+
+Watch the app in action to experience both light and dark modes:
+
+- **Light Mode**: [Watch Light Mode Video](https://youtu.be/kcssXjRKDeE?si=fADc11GNnnA4o0Dt)
+- **Dark Mode**: [Watch Dark Mode Video](https://youtu.be/_PpeWIHqnRA?si=uONGbwTsP99Wnknr)
+
+
 ## Getting Started
 
 Follow these steps to set up the project locally:
@@ -66,16 +74,6 @@ To run unit tests, use the following command:
 
 ```bash
    ./gradlew test
-
-
-## Video Reference
-
-Watch the app in action to experience both light and dark modes:
-
-- **Light Mode**: [Watch Light Mode Video](https://youtu.be/kcssXjRKDeE?si=fADc11GNnnA4o0Dt)
-- **Dark Mode**: [Watch Dark Mode Video](https://youtu.be/_PpeWIHqnRA?si=uONGbwTsP99Wnknr)
-
-
 
 Happy coding! 🚀
 
