@@ -72,8 +72,7 @@ Running Tests
 
 To run unit tests, use the following command:
 
-```bash
-   ./gradlew test
+    ```bash
+     ./gradlew test
 
-Happy coding! 🚀
-
+**Happy coding! 🚀
