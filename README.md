@@ -15,7 +15,7 @@ Welcome to Onboarding, a modern and feature-rich Android application designed to
 
 ## Overview
 
-Your App Name is built using cutting-edge technologies, incorporating Jetpack Compose, Room, Coroutines, Kotlin, Shared Preferences, Modular and Clean Architecture, Hilt, Navigation with Animation, and Unit Testing. The app emphasizes animations for navigation, robust email and password validations, and ensures data persistence on back navigation.
+Onboarding is built using cutting-edge technologies, incorporating Jetpack Compose, Room, Coroutines, Kotlin, Shared Preferences, Modular and Clean Architecture, Hilt, Navigation with Animation, and Unit Testing. The app emphasizes animations for navigation, robust email and password validations, and ensures data persistence on back navigation.
 
 ## Tech Stack
 
