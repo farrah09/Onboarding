@@ -67,5 +67,15 @@ To run unit tests, use the following command:
 ```bash
    ./gradlew test
 
+
+## Video Reference
+
+Watch the app in action to experience both light and dark modes:
+
+- **Light Mode**: [Watch Light Mode Video](https://youtu.be/kcssXjRKDeE?si=fADc11GNnnA4o0Dt)
+- **Dark Mode**: [Watch Dark Mode Video](https://youtu.be/_PpeWIHqnRA?si=uONGbwTsP99Wnknr)
+
+
+
 Happy coding! 🚀
 
