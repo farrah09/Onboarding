@@ -1,6 +1,6 @@
-# Your App Name
+# Onboarding 
 
-Welcome to **Your App Name**, a modern and feature-rich Android application designed to provide a seamless and engaging user experience.
+Welcome to Onboarding, a modern and feature-rich Android application designed to provide a seamless and engaging user experience.
 
 ## Table of Contents
 
