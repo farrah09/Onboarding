@@ -1,3 +1,4 @@
+# Demonstration
 # Onboarding 
 
 Welcome to Onboarding, a modern and feature-rich Android application designed to provide a seamless and engaging user experience.
@@ -25,10 +26,11 @@ Onboarding is built using cutting-edge technologies, incorporating Jetpack Compo
 4. **Kotlin**: Concise and expressive language enhancing code readability.
 5. **Shared Preferences**: Persist critical app states such as onboarding decisions.
 6. **Modular Architecture**: Promotes scalability, maintainability, and separation of concerns.
-7. **Clean Architecture**: Clear separation of business logic, presentation, and data layers.
+7. **Clean Architecture**: Clear separation of business logic, presentation, and data layers. Distribution based on layered features.
 8. **Hilt**: Efficient dependency injection for a clean and maintainable codebase.
 9. **Navigation with Animation**: Enhance user experience with smooth animations.
 10. **Unit Testing**: Comprehensive tests for email and phone validation and OnboardingDatabase functionality.
+11. **MVI**: The app follows MVI Pattern
 
 ## Features
 
