@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.map
 
 class OnboardingRepositoryImpl(
     private val userCredentialsDao: UserCredentialsDao,
-    private val userInfoDao: UserInfoDao
+    private val userInfoDao: UserInfoDao,
 ) : OnboardingRepository {
 
     override suspend fun insertUserInfo(userInfo: UserInfo) {

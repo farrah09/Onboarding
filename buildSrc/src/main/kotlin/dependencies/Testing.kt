@@ -4,6 +4,7 @@ import androidTestImplementation
 import debugImplementation
 import org.gradle.api.artifacts.dsl.DependencyHandler
 import testImplementation
+import testRuntimeOnly
 
 object Testing {
     private const val junitVersion = "4.13.2"
@@ -19,6 +20,15 @@ object Testing {
     const val composeUiTooling = "androidx.compose.ui:ui-tooling"
     const val composeUiTest = "androidx.compose.ui:ui-test-manifest"
 
+    const val junitJupiterApi = "org.junit.jupiter:junit-jupiter:$junitVersion"
+    const val junitJupiterEngine = "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+
+    private const val androidArchCoreTestingVersion = "2.2.0"
+    const val androidArchCoreTesting = "androidx.arch.core:core-testing:$androidArchCoreTestingVersion"
+
+    private const val kluentAndroidVersion = "1.73"
+    const val kluentAndroid = "org.amshove.kluent:kluent-android:$kluentAndroidVersion"
+
     private const val navigationTestVersion = "2.7.7"
     const val navigationTest = "androidx.navigation:navigation-testing:$navigationTestVersion"
 
@@ -29,6 +39,9 @@ object Testing {
     const val mockk = "io.mockk:mockk:$mockkVersion"
     const val mockkAndroid = "io.mockk:mockk-android:$mockkVersion"
 
+    private const val mockitoCoreVersion = "1.10.19"
+    const val mockitoCore = "org.mockito:mockito-core:$mockitoCoreVersion"
+
     const val hiltTesting = "com.google.dagger:hilt-android-testing:${DaggerHilt.version}"
 
     private const val testRunnerVersion = "1.4.0"
@@ -36,10 +49,24 @@ object Testing {
 
     private const val annotationVersion = "1.1.0"
     const val annotation = "androidx.annotation:annotation:$annotationVersion"
+
+    private const val androidTestCoreVersion = "1.4.0"
+    const val androidTestCore = "androidx.test:core:$androidTestCoreVersion"
+
+    private const val kotlinTestVersion = "1.5.21"
+    const val kotlinTest = "org.jetbrains.kotlin:kotlin-test:$kotlinTestVersion"
 }
 
-fun DependencyHandler.test(){
+fun DependencyHandler.test() {
     testImplementation(Testing.junit4)
+    testImplementation(Testing.junitJupiterApi)
+    testRuntimeOnly(Testing.junitJupiterEngine)
+    testImplementation(Testing.androidArchCoreTesting)
+    testImplementation(Testing.kluentAndroid)
+    testImplementation(Testing.androidTestCore)
+    testImplementation(Testing.kotlinTest)
+    testImplementation(Testing.mockitoCore)
+    testImplementation(Testing.mockk)
     androidTestImplementation(Testing.junitAndroidExt)
     androidTestImplementation(Testing.espressoCore)
     androidTestImplementation(platform(Compose.bom))
@@ -47,7 +74,6 @@ fun DependencyHandler.test(){
     androidTestImplementation(Testing.hiltTesting)
     androidTestImplementation(Testing.testRunner)
     androidTestImplementation(Testing.mockkAndroid)
-    androidTestImplementation(Testing.mockk)
     androidTestImplementation(Testing.annotation)
     debugImplementation(Testing.composeUiTest)
     debugImplementation(Testing.composeUiTooling)

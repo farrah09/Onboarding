@@ -97,6 +97,8 @@ ktlint {
 
 dependencies {
 
+    testImplementation(project(":data"))
+    testImplementation(project(":data"))
     ktx()
     compose()
     test()
