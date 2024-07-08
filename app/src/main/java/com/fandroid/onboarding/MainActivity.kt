@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
                 NavigationEffects(
 
                     navigationChannel = viewModel.navigationChannel,
-                    navHostController = navController
+                    navHostController = navController,
 
                 )
                 NavigatorComposable(navController, viewModel.isShowOnboarding())
